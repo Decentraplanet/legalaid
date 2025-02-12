@@ -17,6 +17,12 @@ const translations = {
             <p>Merytoryczna wiedza prawna, wsparta jest doświadczeniem i wiedzą biznesową, prowadzeniem projektów, negocjacji, budowaniem relacji z klientami, co pozwala nam stosować przepisy prawa w sposób dostosowany do potrzeb klienta.</p>
         `,
         'contact-title': 'Kontakt',
+        'feature-experience-title': 'Doświadczenie',
+        'feature-experience-desc': 'Wieloletnie doświadczenie w obsłudze prawnej firm i klientów indywidualnych.',
+        'feature-support-title': 'Wsparcie',
+        'feature-support-desc': 'Kompleksowe wsparcie prawne dostosowane do indywidualnych potrzeb.',
+        'feature-quality-title': 'Jakość',
+        'feature-quality-desc': 'Najwyższa jakość usług prawnych i indywidualne podejście do każdej sprawy.',
         'services': [
             {
                 title: 'Nowe technologie i Projekty IT',
@@ -100,6 +106,12 @@ const translations = {
             <p>Our substantive legal knowledge is supported by business experience and expertise in project management, negotiations, and building client relationships, allowing us to apply legal provisions in a way that is tailored to client needs.</p>
         `,
         'contact-title': 'Contact',
+        'feature-experience-title': 'Experience',
+        'feature-experience-desc': 'Years of experience in legal services for companies and individual clients.',
+        'feature-support-title': 'Support',
+        'feature-support-desc': 'Comprehensive legal support tailored to individual needs.',
+        'feature-quality-title': 'Quality',
+        'feature-quality-desc': 'Highest quality of legal services and individual approach to each case.',
         'services': [
             {
                 title: 'New Technologies & IT Projects',
