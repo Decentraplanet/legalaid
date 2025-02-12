@@ -1,9 +1,10 @@
 // Constants
-const SUPPORTED_LANGUAGES = ['pl', 'en'];
+const STORAGE_KEY = 'selectedLanguage';
 const DEFAULT_LANGUAGE = 'pl';
+const SUPPORTED_LANGUAGES = ['pl', 'en'];
 
-// State
-let currentLanguage = DEFAULT_LANGUAGE;
+// Get the stored language or use default
+let currentLanguage = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANGUAGE;
 
 // DOM Elements
 const languageSwitchButton = document.getElementById('langSwitch');
@@ -18,18 +19,16 @@ class LanguageError extends Error {
 }
 
 /**
- * Updates the content of the page based on the selected language
- * @param {string} targetLanguage - The language code to switch to
- * @throws {LanguageError} If the language is not supported
+ * Updates all content on the page for the given language
  */
-function updateContent(targetLanguage) {
+function updateContent(language) {
     try {
-        validateLanguage(targetLanguage);
-        updateTextContent(targetLanguage);
-        updateServicesSection(targetLanguage);
-        updateLanguageButton(targetLanguage);
-        updateHtmlLangAttribute(targetLanguage);
-        currentLanguage = targetLanguage;
+        validateLanguage(language);
+        updateLanguageButton(language);
+        updateTextContent(language);
+        updateServicesSection(language);
+        updateHtmlLangAttribute(language);
+        currentLanguage = language;
     } catch (error) {
         handleError(error);
     }
@@ -47,14 +46,24 @@ function validateLanguage(language) {
 }
 
 /**
- * Updates all text content elements with translations
- * @param {string} language - The language code to use for translations
+ * Updates the language button display
+ */
+function updateLanguageButton(language) {
+    if (!languageSwitchButton) return;
+    languageSwitchButton.innerHTML = `
+        <span class="${language === 'pl' ? 'opacity-100' : 'opacity-50'} hover:opacity-100 transition-opacity">PL</span>
+        <span class="mx-1">|</span>
+        <span class="${language === 'en' ? 'opacity-100' : 'opacity-50'} hover:opacity-100 transition-opacity">EN</span>
+    `;
+}
+
+/**
+ * Updates text content based on translations
  */
 function updateTextContent(language) {
-    const elements = document.querySelectorAll('[data-lang-key]');
-    elements.forEach(element => {
+    document.querySelectorAll('[data-lang-key]').forEach(element => {
         const key = element.getAttribute('data-lang-key');
-        const translation = getTranslation(language, key);
+        const translation = translations[language][key] || key;
         
         if (key === 'about-content') {
             element.innerHTML = translation;
@@ -62,21 +71,6 @@ function updateTextContent(language) {
             element.textContent = translation;
         }
     });
-}
-
-/**
- * Gets translation for a specific key
- * @param {string} language - The language code
- * @param {string} key - The translation key
- * @returns {string} The translated text
- */
-function getTranslation(language, key) {
-    try {
-        return translations[language][key] || key;
-    } catch (error) {
-        console.error(`Translation missing for key: ${key} in language: ${language}`);
-        return key;
-    }
 }
 
 /**
@@ -160,18 +154,7 @@ function createServiceListItem(itemText) {
 }
 
 /**
- * Updates the language switch button text
- * @param {string} language - The current language code
- */
-function updateLanguageButton(language) {
-    if (languageSwitchButton) {
-        languageSwitchButton.textContent = language === 'pl' ? 'EN' : 'PL';
-    }
-}
-
-/**
  * Updates the HTML lang attribute
- * @param {string} language - The language code
  */
 function updateHtmlLangAttribute(language) {
     document.documentElement.lang = language;
@@ -200,7 +183,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 if (languageSwitchButton) {
     languageSwitchButton.addEventListener('click', () => {
-        const newLanguage = currentLanguage === 'pl' ? 'en' : 'pl';
-        updateContent(newLanguage);
+        try {
+            const newLanguage = currentLanguage === 'pl' ? 'en' : 'pl';
+            localStorage.setItem(STORAGE_KEY, newLanguage);
+            updateContent(newLanguage);
+        } catch (error) {
+            handleError(error);
+        }
     });
 }
