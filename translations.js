@@ -10,6 +10,11 @@ const translations = {
         'hero-cta-2': 'Skontaktuj się z nami',
         'services-title': 'Usługi',
         'about-title': 'O nas',
+        'contact-form-title': 'Wyślij wiadomość',
+        'contact-form-name': 'Imię i nazwisko',
+        'contact-form-email': 'Email',
+        'contact-form-message': 'Wiadomość',
+        'contact-form-submit': 'Wyślij',
         'about-content': `
             <p>Przemysław Kondratowicz Legal Aid koncentruje się na budowaniu wysokiej jakości świadczonych usług i poszukiwaniu rozwiązań optymalnych dla klientów kancelarii.</p>
             <p>Kancelaria Przemysław Kondratowicz Legal Aid specjalizuje się w sporach sądowych, prawnych aspektach IT, nowych technologiach, blockchain, e-commerce, własności intelektualnej, szkoleniach z zakresu RODO i prawa pracy. Wieloletnie doświadczenie zawodowe, pozwala na kompleksową obsługę klientów, działających w wielu obszarach biznesowych jak i umożliwia obsługę prawną nowo powstałych podmiotów, w tym start-upów.</p>
@@ -100,6 +105,11 @@ const translations = {
         'hero-cta-2': 'Contact us',
         'services-title': 'Services',
         'about-title': 'About Us',
+        'contact-form-title': 'Send a message',
+        'contact-form-name': 'Full name',
+        'contact-form-email': 'Email',
+        'contact-form-message': 'Message',
+        'contact-form-submit': 'Send',
         'about-content': `
             <p>Przemysław Kondratowicz Legal Aid focuses on building high-quality services and finding optimal solutions for our clients.</p>
             <p>The law firm specializes in litigation, IT legal aspects, new technologies, blockchain, e-commerce, intellectual property, GDPR training, and labor law. Years of professional experience allow us to provide comprehensive services to clients operating in many business areas and enable legal support for newly established entities, including startups.</p>
