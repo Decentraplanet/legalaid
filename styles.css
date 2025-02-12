@@ -1,0 +1,82 @@
+/* Custom styles */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Modern scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+}
+
+/* Smooth transitions */
+a, button {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Service cards animation */
+.service-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ensure content is readable */
+.prose {
+    max-width: 65ch;
+    margin: 0 auto;
+}
+
+.prose p {
+    margin-bottom: 1.5em;
+    line-height: 1.8;
+}
+
+/* Hero section enhancement */
+.hero-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 100%);
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+    }
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animations to sections */
+section {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Enhanced focus states */
+a:focus, button:focus {
+    outline: 2px solid #dc2626;
+    outline-offset: 2px;
+}

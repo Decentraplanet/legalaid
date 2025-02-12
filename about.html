@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas - Przemysław Kondratowicz Legal Aid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@radix-ui/themes@2.0.3/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        accent: {
+                            DEFAULT: '#dc2626',
+                            foreground: '#ffffff',
+                        },
+                        border: "hsl(var(--border))",
+                        background: "hsl(var(--background))",
+                        foreground: "hsl(var(--foreground))",
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 font-sans min-h-screen flex flex-col">
+    <nav class="bg-white shadow-lg fixed w-full z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-semibold">
+                    <a href="index.html" class="text-gray-800 hover:text-accent">Przemysław Kondratowicz Legal Aid</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex space-x-8">
+                        <a href="services.html" class="text-gray-600 hover:text-accent transition-colors" data-lang-key="nav-services">Usługi</a>
+                        <a href="about.html" class="text-accent" data-lang-key="nav-about">O nas</a>
+                        <a href="contact.html" class="text-gray-600 hover:text-accent transition-colors" data-lang-key="nav-contact">Kontakt</a>
+                    </div>
+                    <button id="langSwitch" class="px-4 py-2 border rounded-md hover:bg-gray-100 hover:border-accent transition-colors">
+                        EN
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-20">
+        <!-- About Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <h1 class="text-4xl font-bold text-gray-900 mb-8" data-lang-key="about-title">O nas</h1>
+                <div class="prose lg:prose-xl max-w-4xl mx-auto" data-lang-key="about-content">
+                    <!-- About content will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-auto">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-center text-gray-400"> 2025 by Przemysław Kondratowicz Legal Aid</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
