@@ -9,6 +9,8 @@ let currentLanguage = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANGUAGE;
 // DOM Elements
 const languageSwitchButton = document.getElementById('langSwitch');
 const servicesContainer = document.querySelector('#services-grid');
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
 
 // Custom error for language-related issues
 class LanguageError extends Error {
@@ -170,6 +172,20 @@ function handleError(error) {
     } else {
         console.error(`Unexpected error: ${error.message}`);
     }
+}
+
+// Mobile menu functionality
+if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
 }
 
 // Event Listeners

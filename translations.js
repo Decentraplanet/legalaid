@@ -7,6 +7,7 @@ const translations = {
         'hero-description': 'Zapewniająca obsługę prawną, szkolenia RODO, reprezentację sądową i administracyjną, wsparcie w transakcjach i projektach korporacyjnych oraz bieżącym doradztwie prawnym',
         'hero-description-2': 'Zapewniamy specjalistyczne wsparcie Twojej organizacji i osobom prywatnym',
         'hero-cta': 'Zobacz nasze usługi',
+        'hero-cta-2': 'Skontaktuj się z nami',
         'services-title': 'Usługi',
         'about-title': 'O nas',
         'about-content': `
@@ -96,6 +97,7 @@ const translations = {
         'hero-description': 'Providing legal services, GDPR training, court and administrative representation, support in corporate transactions and projects, and ongoing legal advice',
         'hero-description-2': 'Providing specialized support to your organization and individuals',
         'hero-cta': 'View our services',
+        'hero-cta-2': 'Contact us',
         'services-title': 'Services',
         'about-title': 'About Us',
         'about-content': `

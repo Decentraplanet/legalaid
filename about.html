@@ -37,7 +37,10 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="text-xl font-semibold">
-                    <a href="index.html" class="text-gray-800 hover:text-accent">Przemysław Kondratowicz Legal Aid</a>
+                    <a href="index.html" class="text-gray-800 hover:text-accent">
+                        <span class="block">Przemysław Kondratowicz</span>
+                        <span class="block text-lg">Legal Aid</span>
+                    </a>
                 </div>
                 <div class="flex items-center space-x-4">
                     <div class="hidden md:flex space-x-8">
@@ -45,6 +48,12 @@
                         <a href="about.html" class="text-accent" data-lang-key="nav-about">O nas</a>
                         <a href="contact.html" class="text-gray-600 hover:text-accent transition-colors" data-lang-key="nav-contact">Kontakt</a>
                     </div>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md hover:bg-gray-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
                     <button id="langSwitch" class="px-4 py-2 border rounded-md hover:bg-gray-100 hover:border-accent transition-colors flex items-center space-x-1">
                         <span class="opacity-100">PL</span>
                         <span class="mx-1">|</span>
@@ -53,9 +62,17 @@
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 py-3 space-y-2">
+                <a href="services.html" class="block text-gray-600 hover:text-accent transition-colors py-2" data-lang-key="nav-services">Usługi</a>
+                <a href="about.html" class="block text-accent py-2" data-lang-key="nav-about">O nas</a>
+                <a href="contact.html" class="block text-gray-600 hover:text-accent transition-colors py-2" data-lang-key="nav-contact">Kontakt</a>
+            </div>
+        </div>
     </nav>
 
-    <main class="flex-grow pt-20">
+    <main class="flex-grow pt-24 md:pt-20">
         <!-- About Section -->
         <section class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4">
