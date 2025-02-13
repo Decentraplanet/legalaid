@@ -76,6 +76,10 @@ a, button {
     .mobile-menu.active {
         display: block;
     }
+    
+    .hero-section h1 {
+        margin-top: 36px;
+    }
 }
 
 /* Animation keyframes */
