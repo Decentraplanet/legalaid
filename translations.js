@@ -91,6 +91,16 @@ const translations = {
                     'Przygotowywanie wewnętrznych regulacji pracowniczych',
                     'Obsługa sporów sądowych z pracownikami'
                 ]
+            },
+            {
+                title: 'Depozyt dokumentów i rzeczy wartościowych',
+                items: [
+                    'Czasowe przechowywanie dokumentacji i rzeczy wartościowych w naszych zasobach przez okres ustalony z Klientem',
+                    'Naliczanie miesięczne za usługę w zamian za niewielką roczną opłatę',
+                    'Kompleksowy i w pełni bezpieczny outsourcing zarządzania dokumentacją',
+                    'Zarządzanie przedmiotami istotnymi dla zarządzania firmy',
+                    'Umowy depozytu zawierane na okres minimum 5 lat'
+                ]
             }
         ]
     },
@@ -185,6 +195,16 @@ const translations = {
                     'Development of employee documentation templates',
                     'Preparation of internal labor regulations',
                     'Handling employment court disputes'
+                ]
+            },
+            {
+                title: 'Document and Valuables Deposit',
+                items: [
+                    'Temporary storage of documentation and valuables in our resources for a period agreed with the Client',
+                    'Monthly billing for the service in exchange for a small annual fee',
+                    'Comprehensive and fully secure outsourcing of documentation management',
+                    'Management of items important for company management',
+                    'Deposit agreements concluded for a minimum period of 5 years'
                 ]
             }
         ]

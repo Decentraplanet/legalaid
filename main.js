@@ -101,10 +101,17 @@ function createServiceCard(service) {
     card.className = 'service-card bg-white p-6 rounded-lg shadow-lg border border-gray-200 hover:border-accent transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1';
     
     const title = createServiceTitle(service.title);
-    const list = createServiceList(service.items);
-    
     card.appendChild(title);
-    card.appendChild(list);
+
+    if (service.items && service.items.length > 0) {
+        const list = createServiceList(service.items);
+        card.appendChild(list);
+    } else if (service.description) {
+        const description = document.createElement('p');
+        description.className = 'mt-4 text-gray-600 leading-relaxed';
+        description.textContent = service.description;
+        card.appendChild(description);
+    }
     
     return card;
 }
