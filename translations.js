@@ -16,8 +16,8 @@ const translations = {
         'contact-form-message': 'Wiadomość',
         'contact-form-submit': 'Wyślij',
         'about-content': `
-            <p>Przemysław Kondratowicz Legal Aid koncentruje się na budowaniu wysokiej jakości świadczonych usług i poszukiwaniu rozwiązań optymalnych dla klientów kancelarii.</p>
-            <p>Kancelaria Przemysław Kondratowicz Legal Aid specjalizuje się w sporach sądowych, prawnych aspektach IT, nowych technologiach, blockchain, e-commerce, własności intelektualnej, szkoleniach z zakresu RODO i prawa pracy. Wieloletnie doświadczenie zawodowe, pozwala na kompleksową obsługę klientów, działających w wielu obszarach biznesowych jak i umożliwia obsługę prawną nowo powstałych podmiotów, w tym start-upów.</p>
+            <p>Przemysław Kondratowicz Legal Services koncentruje się na budowaniu wysokiej jakości świadczonych usług i poszukiwaniu rozwiązań optymalnych dla klientów kancelarii.</p>
+            <p>Kancelaria Przemysław Kondratowicz Legal Services specjalizuje się w sporach sądowych, prawnych aspektach IT, nowych technologiach, blockchain, e-commerce, własności intelektualnej, szkoleniach z zakresu RODO i prawa pracy. Wieloletnie doświadczenie zawodowe, pozwala na kompleksową obsługę klientów, działających w wielu obszarach biznesowych jak i umożliwia obsługę prawną nowo powstałych podmiotów, w tym start-upów.</p>
             <p>W ramach świadczenia usług kancelaria współpracuje z wieloma specjalistami z branży IT, e-commerce, marketingu i finansów.</p>
             <p>Kancelaria została założona przez Przemysława Kondratowicz – radcę prawnego z wieloletnim doświadczeniem, specjalistę w dziedzinie projektów IT, własności intelektualnej, e-commerce, prawa handlowego oraz prawa pracy.</p>
             <p>Merytoryczna wiedza prawna, wsparta jest doświadczeniem i wiedzą biznesową, prowadzeniem projektów, negocjacji, budowaniem relacji z klientami, co pozwala nam stosować przepisy prawa w sposób dostosowany do potrzeb klienta.</p>
@@ -121,7 +121,7 @@ const translations = {
         'contact-form-message': 'Message',
         'contact-form-submit': 'Send',
         'about-content': `
-            <p>Przemysław Kondratowicz Legal Aid focuses on building high-quality services and finding optimal solutions for our clients.</p>
+            <p>Przemysław Kondratowicz Legal Services focuses on building high-quality services and finding optimal solutions for our clients.</p>
             <p>The law firm specializes in litigation, IT legal aspects, new technologies, blockchain, e-commerce, intellectual property, GDPR training, and labor law. Years of professional experience allow us to provide comprehensive services to clients operating in many business areas and enable legal support for newly established entities, including startups.</p>
             <p>As part of our services, the law firm collaborates with many specialists in IT, e-commerce, marketing, and finance.</p>
             <p>The law firm was founded by Przemysław Kondratowicz - a legal advisor with many years of experience, specializing in IT projects, intellectual property, e-commerce, commercial law, and labor law.</p>
